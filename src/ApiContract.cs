@@ -1,12 +1,15 @@
 namespace Tool.Compet.Http {
 	/// Api response body.
-	/// We need add to each field to include them in response.
-	/// Otherwise that field will be auto excluded from response by ASP.NET Core framework.
 	public class DkApiResponse {
-		/// Status code, for eg,. 200, 201, 400, 401, 404, 500, 501,...
-		public virtual int code { get; set; }
+		/// Status.
+		/// For eg,. 200, 201, 400, 401, 404, 500, 501,...
+		public virtual int status { get; set; }
 
-		/// Detail message for both success or failure cases.
+		/// Code (for both success and failure cases).
+		/// For eg,. "should_retry", "need_more_coin",...
+		public virtual string? code { get; set; }
+
+		/// Detail message for both success and failure cases.
 		public virtual string? message { get; set; }
 	}
 }
