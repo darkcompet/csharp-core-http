@@ -1,4 +1,4 @@
-# Http Core for all Http modules
+# Http for C#
 
 This provides core features for all Http modules as `csharp-net-http`, `csharp-unity-http`,...
 
