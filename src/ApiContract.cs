@@ -10,6 +10,6 @@ namespace Tool.Compet.Http {
 		public virtual string? code { get; set; }
 
 		/// Detail message for both success and failure cases.
-		public virtual string? message { get; set; }
+		public virtual string? msg { get; set; }
 	}
 }
