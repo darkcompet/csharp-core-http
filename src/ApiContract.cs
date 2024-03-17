@@ -1,3 +1,5 @@
+#pragma warning disable IDE0161 // 範囲指定されたファイルが設定された namespace に変換
+
 namespace Tool.Compet.Http {
 	/// Api response body.
 	public class DkApiResponse {
